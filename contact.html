@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: auto;">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -37,10 +39,10 @@
 
     <header>
         <div class="m-auto text-center" style=" height: 150px;"><img src="Assets/Images/jdh-01.png" class="img-fluid"
-                style="height: 150px;" alt="JDHarris Signature"></div>
-        <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
-            style="font-family: 'Catamaran', sans-serif; position: absolute; top: 150;">
+            style="height: 150px;" alt="JDHarris Signature"></div>
+    <!-- Fixed navbar -->
+        <nav role="navigation" class="navbar-top navbar-expand-md navbar-dark bg-dark pl-3 pr-3 py-2"
+            style="font-family: 'Catamaran', sans-serif; position: absolute; top: 150; left: 0; right: 0; margin: auto; z-index: 1;">
             <!-- <a class="navbar-brand" style="font-size: 24px;" href="#">David Harris</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,7 +84,8 @@
 
                 <!--Grid column-->
                 <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <!-- <form method=”POST” action=”http://formspree.io/your-email-address-goes-here"></form> -->
+                    <form id="contact-form" name="contact-form" action="mailto:jdh.programmer@gmail.com" method="POST">
 
                         <!--Grid row-->
                         <div class="row">
@@ -126,7 +129,7 @@
                             <div class="col-md-12">
 
                                 <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="2"
+                                   <textarea type="text" id="message" name="message" rows="2"
                                         class="form-control md-textarea"></textarea>
                                     <label for="message">Your message</label>
                                 </div>
@@ -136,9 +139,9 @@
                         <!--Grid row-->
 
                     </form>
-                    <!-- onclick="document.getElementById('contact-form').submit();">Send -->
+                    
                     <div class="text-center text-md-left">
-                        <a class="btn btn-primary">
+                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">
                             Send
                         </a>
                     </div>
@@ -183,7 +186,7 @@
                 <i class="fab fa-facebook facebook fa-2x p-3"></i>
             </a>
 
-            <a href="#" target="_blank" class="icon-block">
+            <a href="https://www.instagram.com/jdh_programmer/" target="_blank" class="icon-block">
                 <i class="fa fa-instagram instagram fa-2x p-3"></i>
             </a>
 
@@ -216,3 +219,4 @@
     </script>
 
 </body>
+</html>

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: auto;">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -27,7 +29,7 @@
     <link rel="stylesheet" href="jdh_style.css">
 
     <script src="https://kit.fontawesome.com/447e525a7d.js" crossorigin="anonymous"></script>
-
+    <script src="script.js"></script>
 </head>
 
 <body cz-shortcut-listen="true">
@@ -36,8 +38,8 @@
         <div class="m-auto text-center" style=" height: 150px;"><img src="Assets/Images/jdh-01.png" class="img-fluid"
                 style="height: 150px;" alt="JDHarris Signature"></div>
         <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
-            style="font-family: 'Catamaran', sans-serif; position: absolute; top: 150;">
+        <nav role="navigation" class="navbar-top navbar-expand-md navbar-dark bg-dark pl-3 pr-3 py-2"
+            style="font-family: 'Catamaran', sans-serif; position: absolute; top: 150; left: 0; right: 0; margin: auto; z-index: 1;">
             <!-- <a class="navbar-brand" style="font-size: 24px;" href="#">David Harris</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,10 +64,10 @@
             </div>
         </nav>
 
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container" style="color: white;">
+        <div class="jumbotron jumbotron-fluid" style="position: relative; top: 56px;">
+            <div class="container" style="color: white; ">
                 <h1 class="display-4">James David Harris</h1>
-                <p class="lead" style="font-size: 30px;">Dallas based FULL STACK Developer</p>
+                <p class="lead" style="font-size: 30px; ">Dallas based FULL STACK Developer</p>
             </div>
         </div>
 
@@ -74,7 +76,7 @@
     <!-- Begin page content -->
     <main role="main" class="container">
 
-        <div class="row text-center pb-4" style="font-size: 28px; font-style: italic;">
+        <div class="row text-center pb-4 py-5" style="font-size: 28px; font-style: italic;">
             <div class="col-12">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quis, neque repudiandae
                 rem dignissimos velit tenetur nemo doloremque rerum veritatis in culpa, dolor eaque alias vero eius
                 perferendis porro odio. Illo ullam odio omnis. Quas, dolores! Aspernatur exercitationem mollitia ullam
@@ -82,14 +84,14 @@
                 officia nulla voluptatem debitis dolores doloremque similique voluptatibus asperiores quasi repellendus
                 architecto explicabo officiis, doloribus quos delectus harum magnam possimus alias!"</div>
         </div>
-        <div class="row justify-content-around text-center py-4">
+        <div class="row justify-content-around text-center py-2">
             <div class="col-12 col-md-12 col-lg-3">
                 <div class="row">
                     <div class="col callouts">CREATIVE</div>
                 </div>
                 <div class="row">
                     <div class="col text-center">
-                        <img class="img-fluid" src="Assets/Images/callout-creative.jpg" alt="">
+                        <img class="img-fluid rounded mx-auto d-block" src="Assets/Images/callout-creative.jpg" alt="">
                     </div>
                 </div>
                 <div class="row py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium inventore
@@ -103,7 +105,7 @@
                 </div>
                 <div class="row">
                     <div class="col text-center">
-                        <img class="img-fluid" src="Assets/Images/callout-driven.jpg" alt="">
+                        <img class="img-fluid rounded mx-auto d-block" src="Assets/Images/callout-driven.jpg" alt="">
                     </div>
                 </div>
                 <div class="row py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium inventore
@@ -117,7 +119,7 @@
                 </div>
                 <div class="row">
                     <div class="col text-center">
-                        <img class="img-fluid" src="Assets/Images/callout-professional.jpg" alt="">
+                        <img class="img-fluid rounded mx-auto d-block" src="Assets/Images/callout-professional.jpg" alt="">
                     </div>
                 </div>
                 <div class="row py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium inventore
@@ -143,7 +145,7 @@
                 <i class="fab fa-facebook facebook fa-2x p-3"></i>
             </a>
 
-            <a href="#" target="_blank" class="icon-block">
+            <a href="https://www.instagram.com/jdh_programmer/" target="_blank" class="icon-block">
                 <i class="fa fa-instagram instagram fa-2x p-3"></i>
             </a>
 
@@ -158,7 +160,7 @@
         </div>
     </footer>
 
-    <footer class="footer">
+    <footer class="footer fixed-bottom">
         <div class="container text-center">
             <span class="text-muted">© Copyright 2020 David Harris
             </span>
@@ -168,6 +170,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -176,3 +180,4 @@
     </script>
 
 </body>
+</html>
